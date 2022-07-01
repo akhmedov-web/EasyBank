@@ -12,6 +12,8 @@
 
 .navbar .navbarMenu {
     width: 30%;
+    height:100%;
+    display: flex;
 }
 
 .navbar .navbarMenu .menuItems {
@@ -35,6 +37,7 @@
     margin-top: -10px;
     color: white;
     font-weight: 300;
+    cursor: pointer;
     background: linear-gradient(115deg, rgba(49, 211, 92, 1) 0%, rgba(43, 183, 218, 1) 100%);
 }
 
@@ -63,6 +66,10 @@
     font-size: 18px;
 }
 
+.main_blog .main_left{
+    width: 50%;
+}
+
 .main_blog .main_right {
     background-image: url(../images/bg-intro-desktop.svg);
     background-size: cover;
@@ -74,6 +81,18 @@
     width: 100%;
     position: relative;
     top: -59px;
+}
+.main_blog .main_btn{
+    border: none;
+    border-radius: 20px;
+    padding: 0.4rem 1rem;
+    margin-top: -10px;
+    color: white;
+    font-weight: 300;
+    background: linear-gradient(115deg, rgba(49, 211, 92, 1) 0%, rgba(43, 183, 218, 1) 100%);
+}
+.main_blog .main_btn:hover {
+    background: linear-gradient(115deg, rgb(100, 219, 132) 0%, rgb(65, 192, 224) 100%);
 }
 
 /* main blog end */
@@ -103,6 +122,10 @@
     height: 60%;
 }
 
+.suggesting_blog .suggesting_bottom .suggesting_card{
+    width: 25%;
+}
+
 .suggesting_blog .suggesting_bottom .suggesting_title {
     margin: 25px 0px;
     font-weight: 400;
@@ -117,8 +140,15 @@
 }
 
 .news_title {
-    margin: 50px;
+    margin:50px;
     font-weight: 400;
+}
+.news_slider{
+    height: 75%;
+}
+
+.news_card{
+    width: 25%;
 }
 
 .card_img {
@@ -135,6 +165,10 @@
     background-color: #2D314D;
 }
 
+.footer_menu{
+    width: 25%;
+}
+
 .footer_brand {
     width: 60%;
     height: 30px;
@@ -142,3 +176,84 @@
 
 
 /* footer end */
+
+@media only screen and (max-width:576px) {
+    .main_blog {
+        height: 300px;
+        padding: 20px;
+    }
+    .main_blog .main_title {
+        font-size: 37px;
+        font-weight: 400;
+        font-family: sans-serif;
+    }
+    .main_blog .main_desc {
+        color: grey;
+        font-size: 15px;
+        margin-bottom: 30px;
+    }
+    .main_blog .main_left{
+        width: 100%;
+    }
+
+    .suggesting_blog {
+        height: auto;
+        background-color: #F3F4F6;
+    }
+    
+    .suggesting_blog .suggesting_top {
+        height: 10%;
+        padding: 10px;
+    }
+    .suggesting_blog .suggesting_bottom {
+        height: 90%;
+    }
+    .suggesting_blog .suggesting_top .suggesting_title {
+        font-size: 35px;
+        font-weight: 400;
+        margin-top: 80px;   
+    }
+    .suggesting_blog .suggesting_bottom .suggesting_card{
+        width: 90%;
+    }
+
+    .news_blog {
+        height:auto;
+    }
+    .news_slider{
+        height: 95%;
+    }
+    .news_card{
+        width: 90%;
+    }
+    .news_title {
+        font-weight: 400;
+        font-size: 30px;
+        margin: 30px 75px;
+    }
+    .footer {
+        height: auto;
+        background-color: #2D314D;
+    }
+    .footer_menu{
+        width: 100%;
+    }
+
+    .navbar .navbarMenu {
+        width: 85%;
+        height:auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        background-color:#fff;
+        box-shadow: 0px 0px 5px black;
+        position: absolute;
+        top: 5.3rem;
+        left: 7%;
+        padding: 25px;
+        transition: all 0.3s ease-in-out;
+    }
+    .hide{
+        transform: translateY(-150%);
+    }
+}

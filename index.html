@@ -19,38 +19,39 @@
     <div class="row">
       <div class="col-12 navbar d-flex justify-content-between">
         <img src="./images/logo.svg" alt="brand">
-        <ul class="navbarMenu h-100 d-flex">
+        <ul class="navbarMenu hide">
           <a href="#" class="menuItems text-dark">Home</a>
           <a href="#" class="menuItems text-dark">About</a>
           <a href="#" class="menuItems text-dark">Contact</a>
           <a href="#" class="menuItems text-dark">Blog</a>
           <a href="#" class="menuItems text-dark">Careers</a>
         </ul>
-        <button class="request-header desktop">Request Invite</button>
+        <img src="./images/icon-hamburger.svg" alt="img" class="d-xl-none d-block" id="hamburger">
+        <button class="request-header desktop d-xl-block d-none">Request Invite</button>
       </div>
     </div>
     <div class="row">
-      <div class="col-12 main_blog d-flex">
-        <div class="main_left w-50 d-flex flex-column justify-content-around">
+      <div class="col-12 main_blog d-xl-flex">
+        <div class="main_left d-flex flex-column justify-content-around align-items-center text-xl-start text-center">
           <h1 class="main_title">Next generation digital banking</h1>
-          <p class="main_desc">Take your financial life online. Your Easybank account will be a <br> one-stop-shop for
-            spending, saving, budgeting, investing, and <br> much more.</p>
-          <button class="request-header desktop w-25">Request Invite</button>
+          <p class="main_desc">Take your financial life online. Your Easybank account will be a one-stop-shop for
+            spending, saving, budgeting, investing, and much more.</p>
+          <button class="main_btn">Request Invite</button>
         </div>
-        <div class="main_right w-50">
+        <div class="main_right w-50 d-xl-block d-none">
           <img src="./images/image-mockups.png" alt="phones_photo" class="main_img">
         </div>
       </div>
     </div>
     <div class="row">
       <div class="col-12 suggesting_blog">
-        <div class="suggesting_top d-flex flex-column justify-content-center">
+        <div class="suggesting_top d-flex flex-column justify-content-center text-xl-start text-center">
           <h3 class="suggesting_title">Why choose Easybank?</h3>
           <p class="suggesting_desc">We leverage Open Banking to turn your bank account into your financial hub. Control
-            your finances <br> like never before.</p>
+            your finances like never before.</p>
         </div>
-        <div class="suggesting_bottom d-flex">
-          <div class="suggesting_card h-100 w-25 d-flex align-items-center justify-content-center">
+        <div class="suggesting_bottom d-flex flex-xl-row flex-column">
+          <div class="suggesting_card h-100  d-flex align-items-center justify-content-center text-xl-start text-center mt-5">
             <ul>
               <img src="./images/icon-online.svg" alt="img">
               <h4 class="suggesting_title">Online Banking</h4>
@@ -58,21 +59,21 @@
                 world.</p>
             </ul>
           </div>
-          <div class="suggesting_card h-100 w-25 d-flex align-items-center justify-content-center">
+          <div class="suggesting_card h-100  d-flex align-items-center justify-content-center text-xl-start text-center">
             <ul>
               <img src="./images/icon-budgeting.svg" alt="img">
               <h4 class="suggesting_title">Simple Budgeting</h4>
               <p>See exactly where your money goes each month. Receive notifications when you’re close to hitting your limits.</p>
             </ul>
           </div>
-          <div class="suggesting_card h-100 w-25 d-flex align-items-center justify-content-center">
+          <div class="suggesting_card h-100  d-flex align-items-center justify-content-center text-xl-start text-center">
             <ul>
               <img src="./images/icon-onboarding.svg" alt="img">
               <h4 class="suggesting_title">Fast Onboarding</h4>
               <p>We don’t do branches. Open your account in minutes online and start taking control of your finances right away.</p>
             </ul>
           </div>
-          <div class="suggesting_card h-100 w-25 d-flex align-items-center justify-content-center">
+          <div class="suggesting_card h-100  d-flex align-items-center justify-content-center text-xl-start text-center">
             <ul>
               <img src="./images/icon-api.svg" alt="img">
               <h4 class="suggesting_title">Open API</h4>
@@ -81,30 +82,30 @@
           </div>
         </div>
       </div>
-    </div>
+    </div>  
     <div class="row">
       <div class="col-12 news_blog">
         <h2 class="news_title">Latest Articles</h2>
-        <div class="news_slider w-100 h-75 d-flex">
-<div class="news_card h-100 w-25 m-3">
+        <div class="news_slider w-100 d-flex flex-xl-row flex-column">
+<div class="news_card h-100  m-3">
   <img src="./images/image-currency.jpg" alt="img" class="card_img">
   <p class="text-secondary m-2">By Claire Robinson</p>
   <h5 class="m-3">Receive money in any currency with no fees</h5>
   <p class="m-3 text-secondary">The world is getting smaller and we’re becoming more mobile. So why should you be forced to only receive money in a single …</p>
 </div>
-<div class="news_card h-100 w-25 m-3">
+<div class="news_card h-100 m-3">
   <img src="./images/image-restaurant.jpg" alt="img" class="card_img">
   <p class="text-secondary m-2">By Wilson Hutton</p>
   <h5 class="m-3">Treat yourself without worrying about money</h5>
   <p class="m-3 text-secondary">Our simple budgeting feature allows you to separate out your spending and set realistic limits each month. That means you …</p>
 </div>
-<div class="news_card h-100 w-25 m-3">
+<div class="news_card h-100 m-3">
   <img src="./images/image-plane.jpg" alt="img" class="card_img">
   <p class="text-secondary m-2">By Wilson Hutton</p>
   <h5 class="m-3">Take your Easybank card wherever you go</h5>
   <p class="m-3 text-secondary">We want you to enjoy your travels. This is why we don’t charge any fees on purchases while you’re abroad. We’ll even show you …</p>
 </div>
-<div class="news_card h-100 w-25 m-3">
+<div class="news_card h-100 m-3">
   <img src="./images/image-confetti.jpg" alt="img" class="card_img">
   <p class="text-secondary m-2">By Claire Robinson</p>
   <h5 class="m-3">Our invite-only Beta accounts are now live!</h5>
@@ -114,8 +115,8 @@
       </div>
     </div>
     <div class="row">
-      <div class="col-12 footer d-flex">
-        <div class="footer_menu w-25 h-100 d-flex flex-column justify-content-between">
+      <div class="col-12 footer d-flex flex-xl-row flex-column">
+        <div class="footer_menu h-100 d-flex flex-column justify-content-between align-items-center mb-xl-0 mb-2">
           <svg xmlns="http://www.w3.org/2000/svg" width="139" height="20" class="m-4">
             <defs>
               <linearGradient id="a" x1="72.195%" x2="17.503%" y1="0%" y2="100%">
@@ -134,7 +135,7 @@
               </g>
             </g>
           </svg>
-          <ul>
+          <ul class="d-flex me-4">
             <img src="./images/icon-facebook.svg" alt="icon" class="m-1">
             <img src="./images/icon-youtube.svg" alt="icon" class="m-1">
             <img src="./images/icon-twitter.svg" alt="icon" class="m-1">
@@ -142,17 +143,17 @@
             <img src="./images/icon-instagram.svg" alt="icon" class="m-1">
           </ul>
         </div>
-        <div class="footer_menu w-25 h-100 d-flex flex-column text-start justify-content-center">
+        <div class="footer_menu h-100 d-flex flex-column text-xl-start text-center justify-content-center">
           <p class="text-light">About Us</p>
           <p class="text-light">Contact</p>
           <p class="text-light">Blog</p>
         </div>
-        <div class="footer_menu w-25 h-100 d-flex flex-column text-start justify-content-center">
+        <div class="footer_menu h-100 d-flex flex-column text-xl-start text-center justify-content-center mb-xl-0 mb-4">
           <p class="text-light">Careers</p>
           <p class="text-light">Support</p>
           <p class="text-light">Privacy Policy</p>
         </div>
-        <div class="footer_menu w-25 h-100 d-flex flex-column justify-content-center align-items-end">
+        <div class="footer_menu h-100 d-flex flex-column justify-content-center align-xl-items-end align-items-center">
           <button class="request-header desktop mb-3">Request Invite</button>
           <p class="text-secondary">© Powered by Altruist. All Rights Reserved</p>
         </div>
@@ -164,5 +165,5 @@
   integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
   integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
-
+<script src="./js/app.js"></script>
 </html>
